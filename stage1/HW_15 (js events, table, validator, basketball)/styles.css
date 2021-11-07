@@ -1,0 +1,112 @@
+/* START: Task 1 Styles */
+#task1 {
+    background-color: #e5eae9;
+}
+table {
+    border: black 1px solid;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: white;
+}
+td {
+    width: 96px;
+    height: 96px;
+    border: black 1px solid;
+}
+.bg-yellow {
+    background-color: yellow;
+}
+.bg-blue {
+    background-color: blue;
+}
+.bg-green {
+    background-color: green;
+}
+/* END: Task 1 Styles */
+
+/* START: Task 2 Styles */
+#task2 {
+    display: flex;
+    justify-content: center;
+    /*padding-top: 50px;*/
+}
+form {
+    padding-top: 50px;
+    width: 350px;
+    height: 140px;
+}
+.text-input,
+.text-input:active{
+    width: 280px;
+    border: 1px solid black;
+    outline: none;
+}
+.border-red {
+    border: 2px solid red;
+}
+.message {
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+}
+label {
+    color: white;
+}
+.bg-red {
+    border: 1px solid gray;
+    background-color: #ff8080;
+}
+.bg-green {
+    border: 1px solid gray;
+    background-color: #008000;
+}
+/* END: Task 2 Styles */
+
+/* START: Task 3 Styles */
+#task3 {
+    background-color: #e5eae9;
+}
+.court {
+    position: relative;
+    background: url("./assets/court.png") no-repeat center/contain;
+    width: 600px;
+    height: 330px;
+    margin: 50px auto 0;
+}
+.ball {
+    position: absolute;
+    top: calc(330px/2 - 20px);
+    left:calc(600px/2 - 20px);
+    background: url("./assets/ball.png") no-repeat center/contain;
+    width: 40px;
+    height: 40px;
+    transition: 1s ease-out;
+}
+.scoreField {
+    width: 15px;
+    height: 15px;
+}
+#scoreFieldTeamA {
+    position: absolute;
+    top: calc(330px/2 - 15px/2);
+    left: calc(40px - 15px/2);
+}
+#scoreFieldTeamB {
+    position: absolute;
+    top: calc(330px/2 - 15px/2);
+    left: calc(560px - 15px/2);
+}
+.scoreBoard {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    margin: 0 auto;
+}
+#scoreNotification {
+    text-align: center;
+    font-weight: bold;
+    height: 50px;
+}
+/* END: Task 3 Styles */

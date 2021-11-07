@@ -1,0 +1,68 @@
+@mixin icons($top, $left, $url, $height, $width) {
+  content: '';
+  position: absolute;
+  top: $top;
+  left: $left;
+  display: inline-block;
+  height: $height;
+  width: $width;
+  background: center / cover no-repeat url($url);
+  z-index: 1
+}
+
+.control-section {
+  text-align: right;
+  padding: 70px 20px 10px;
+}
+.control-section_input-wrapper:before {
+  @include icons(13px, 15px, "../../../../../assets/img/a-icon-search-2.svg", 20px, 20px);
+  transform: scale(-1, 1);
+}
+.control-section_input-wrapper {
+  margin: 53px 0 0;
+  position: absolute;
+  z-index: 1;
+  border: 1px solid grey;
+  padding:  0 10px 0 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+.input-wrapper_input {
+  display: block;
+  height: 45px;
+  width: 320px;
+  padding-left: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+.control-section_add-course-button {
+  margin-top: 150px;
+  padding-left: 30px;
+  height: 45px;
+  width: 180px;
+  position: relative;
+}
+.control-section_add-course-button::before {
+  @include icons(15px, 35px, "../../../../../assets/img/a-icon-plus.svg", 15px, 15px);
+  fill: white;
+}
+.courses-section {
+  padding: 0 20px;
+}
+
+.load-more-button-wrapper {
+  padding: 0 20px;
+  margin-bottom: 100px;
+}
+.load-more-button {
+  background-color: white;
+  width: 100%;
+  text-transform: uppercase;
+  color: blue;
+}
+.coursesNotFound {
+  margin-top: 50px;
+  text-align: center;
+}

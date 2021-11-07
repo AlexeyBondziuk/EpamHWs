@@ -1,0 +1,200 @@
+body .header-wrap .header_heading::after, main .section_text::after, main .section_banner .section_banner_heading::after {
+  content: "";
+  background-color: #fd4d34;
+  position: absolute;
+  z-index: -1; }
+
+body {
+  background-color: #2b2b2c;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  body header {
+    background-size: cover;
+    background: no-repeat center url(../img/m-h-night.jpg);
+    border-bottom-right-radius: 30vh;
+    height: 60vh;
+    z-index: 1; }
+  body .header-wrap {
+    padding-left: 10vw; }
+    body .header-wrap .landing-logo {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      font-family: "Fresca", sans-serif;
+      color: white;
+      width: 140px; }
+      body .header-wrap .landing-logo img {
+        margin-block-start: 1.6em;
+        max-height: 5vh; }
+      body .header-wrap .landing-logo p {
+        padding: 10px;
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: bold;
+        line-height: 0.8em; }
+        body .header-wrap .landing-logo p span {
+          display: block;
+          font-size: 0.5em; }
+    body .header-wrap .header_heading {
+      max-width: 30vw;
+      min-width: 6em;
+      margin-block: 0.2em;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 3.2em;
+      font-weight: bold;
+      color: white;
+      margin-right: 60vw; }
+      body .header-wrap .header_heading::after {
+        width: 220px;
+        height: 45px;
+        top: 25vh;
+        left: 10vw; }
+    body .header-wrap .header_text {
+      max-width: 40vw;
+      min-width: 25em;
+      color: white;
+      margin-block: 0.5em;
+      margin-right: 45vw;
+      font-family: "Fresca", sans-serif;
+      white-space: pre-line;
+      font-size: 0.8em; }
+    body .header-wrap .header_text ~ div {
+      font-family: "Source Sans Pro", sans-serif;
+      margin: 5vh 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 25vw;
+      min-width: 6em; }
+    body .header-wrap .header_text ~ div > * {
+      display: block;
+      color: white;
+      font-size: 0.9em; }
+    body .header-wrap .header_button {
+      min-width: 100px;
+      min-height: 35px;
+      border: none;
+      border-radius: 2px;
+      background-color: #e1ab01; }
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; }
+  main .section_text {
+    font-family: "Source Sans Pro", sans-serif;
+    color: white;
+    font-size: 1.7em;
+    font-weight: bold;
+    z-index: 1; }
+    main .section_text::after {
+      width: 130px;
+      height: 35px;
+      top: 4vh;
+      left: 42vw; }
+  main .section_card_wrap {
+    width: 70%; }
+    main .section_card_wrap .section_card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px;
+      background-color: #21232E;
+      color: white;
+      font-family: "Source Sans Pro", sans-serif;
+      padding: 10px;
+      border-radius: 3px;
+      max-width: 80vw;
+      min-height: 20vh; }
+      main .section_card_wrap .section_card .section_card_img {
+        border-radius: 3px; }
+      main .section_card_wrap .section_card .section_card_right_container .section_card_heading,
+      main .section_card_wrap .section_card .section_card_right_container .section_link {
+        text-align: center; }
+      main .section_card_wrap .section_card .section_card_right_container .section_card_heading {
+        font-weight: bold; }
+      main .section_card_wrap .section_card .section_card_right_container .section_card_text {
+        padding: 0 5vw;
+        text-align: justify;
+        font-size: 0.8em;
+        color: #C0C3CE;
+        font-family: "Fresca", sans-serif; }
+      main .section_card_wrap .section_card .section_card_right_container .section_link {
+        display: block;
+        color: #C0C3CE;
+        font-size: 0.8em; }
+  main .section_banner {
+    background: linear-gradient(to right, #dea703, #922d52);
+    width: 60vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    font-family: "Source Sans Pro", sans-serif;
+    position: relative;
+    top: 7vh;
+    z-index: 1; }
+    main .section_banner .section_banner_heading {
+      color: white;
+      font-weight: bold;
+      font-size: 1.2em; }
+      main .section_banner .section_banner_heading::after {
+        width: 40px;
+        height: 25px;
+        top: 4vh;
+        left: 14vw; }
+    main .section_banner .section_banner_text {
+      color: #C0C3CE;
+      font-size: 0.8em; }
+    main .section_banner .section_banner_button {
+      min-width: 100px;
+      min-height: 35px;
+      border: none;
+      border-radius: 2px;
+      background-color: #e1ab01;
+      color: white; }
+
+footer {
+  background-color: #21232E;
+  width: 100vw;
+  height: 25vh; }
+  footer .footer-wrap {
+    margin-top: 10vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    font-family: "Fresca", sans-serif;
+    color: #C0C3CE; }
+    footer .footer-wrap .footer_logo.landing-logo {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      min-width: 140px; }
+      footer .footer-wrap .footer_logo.landing-logo img {
+        margin-block-start: 1.6em;
+        max-height: 5vh; }
+      footer .footer-wrap .footer_logo.landing-logo p {
+        padding: 10px;
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: bold;
+        line-height: 0.8em; }
+        footer .footer-wrap .footer_logo.landing-logo p > span {
+          display: block;
+          font-size: 0.5em; }
+    footer .footer-wrap .footer_text {
+      min-width: 20vw;
+      max-width: 30vw;
+      margin: 0 20vw;
+      font-size: 0.8em; }
+    footer .footer-wrap .footer-cr {
+      display: block;
+      min-width: 200px;
+      font-size: 0.8em; }

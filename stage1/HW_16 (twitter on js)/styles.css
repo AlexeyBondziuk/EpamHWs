@@ -1,0 +1,30 @@
+#root {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.listPage,
+#modifyItem{
+    width: 300px;
+    margin: 0 auto;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+#alertMessage {
+    position: absolute;
+    background-color: lightcoral;
+    color: white;
+    padding: 20px 10px;
+}

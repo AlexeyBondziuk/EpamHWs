@@ -1,0 +1,35 @@
+<section class="control-section">
+  <div class="control-section_input-wrapper">
+    <input
+      [formControl]="searchControl"
+      class="input-wrapper_input"
+      type="text"
+      placeholder="Text for search">
+  </div>
+  <button [routerLink]="['./add']" class="btn btn-primary control-section_add-course-button">Add course</button>
+</section>
+
+<section  class="courses-section">
+  <app-list-item
+    *ngFor="let course of courses$ | async"
+    [item]="course"
+    (edit)="handleEdit($event)"
+    (deleted)="handleDelete($event)"
+  ></app-list-item>
+
+  <div *ngIf="!filteredCoursesEmpty && !(loading$ | async)" class="load-more-button-wrapper">
+    <button
+      (click)="onLoadMore()"
+      class="btn load-more-button"
+    >Load more</button>
+  </div>
+
+</section>
+
+<ng-container *ngIf="loading$ | async">
+  <app-loader></app-loader>
+</ng-container>
+
+<ng-container *ngIf="filteredCoursesEmpty">
+  <p class="coursesNotFound">Courses not found</p>
+</ng-container>

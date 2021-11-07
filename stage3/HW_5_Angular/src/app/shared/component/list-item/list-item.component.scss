@@ -1,0 +1,72 @@
+@mixin icons($top, $left, $url, $height, $width) {
+  content: '';
+  position: absolute;
+  top: $top;
+  left: $left;
+  display: inline-block;
+  height: $height;
+  width: $width;
+  background: center / cover no-repeat url($url);
+  z-index: 1
+}
+.courses-section_course {
+  background-color: white;
+  padding: 10px 30px 15px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.course_course-header {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.course-title {
+  text-transform: uppercase;
+}
+.course-title_time-wrapper {
+  color: grey;
+}
+.time-wrapper_time {
+  position: relative;
+  margin-right: 40px;
+}
+.time-wrapper_time::before {
+  @include icons(5px, -20px, "../../../../assets/img/a-icon-time.svg", 15px, 15px);
+}
+.time-wrapper_date {
+  position: relative;
+}
+.time-wrapper_date::before {
+  @include icons(5px, -20px, "../../../../assets/img/a-icon-calendar.svg", 15px, 15px);
+}
+.course_course-main-info {
+  display: flex;
+  justify-content: space-between;
+}
+.course_course-main-info p {
+  width: 78%;
+}
+.course-main-info_button-wrapper {
+  margin-right: 40px;
+}
+.course-main-info_button-wrapper button {
+  margin-left: 10px;
+}
+.course-main-info_edit-button {
+  width: 90px;
+  position: relative;
+  padding-left: 30px;
+}
+.course-main-info_edit-button::before {
+  @include icons(10px, 20px, "../../../../assets/img/a-icon-of-pencil.svg", 15px, 15px);
+  fill: white;
+}
+.course-main-info_delete-button {
+  width: 110px;
+  position: relative;
+  padding-left: 30px;
+}
+.course-main-info_delete-button::before {
+  @include icons(10px, 20px, "../../../../assets/img/a-icon-trash-bin.svg", 15px, 15px);
+  fill: white;
+}

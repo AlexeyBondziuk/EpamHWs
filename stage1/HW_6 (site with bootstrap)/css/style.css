@@ -1,0 +1,16 @@
+body {
+    font-family: Roboto, sans-serif;
+}
+.font-size-increase {
+    font-size: 2em;
+}
+.button-coral {
+    color: white;
+    background-color: coral;
+    border: 1px solid lightcoral;
+}
+.button-coral:hover {
+    color: white;
+    background-color: lightcoral;
+    border: 1px solid coral;
+}

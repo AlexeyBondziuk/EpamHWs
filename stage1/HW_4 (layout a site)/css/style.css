@@ -1,0 +1,226 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  font-family: "Open Sans";
+  background-color: #E8E8E8;
+}
+body header {
+  color: #fff;
+  padding: 2vh 4vw;
+  background: url("../img/apples.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+body header .firstLine {
+  display: flex;
+  justify-content: space-between;
+}
+body header .firstLine .navigation ul li {
+  display: inline;
+  padding: 0 2vw;
+}
+body header .mainTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+body header .mainTitle h1 {
+  font-weight: normal;
+  font-size: 2.8em;
+  letter-spacing: 0.1em;
+}
+body header .mainTitle h1 span {
+  font-size: 2em;
+}
+body header .buttonShowMore {
+  display: block;
+  font-family: "Open Sans";
+  height: 50px;
+  width: 220px;
+  margin: 0 auto;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: solid 2px #fff;
+}
+body main .mainText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45vh;
+  padding: 0 4vw;
+  background-color: #fff;
+}
+body main .mainText h2 {
+  font-weight: normal;
+  max-width: 40%;
+}
+body main .mainText .left {
+  max-width: 45%;
+}
+body main .articles {
+  padding: 0 4vw 0 4vw;
+}
+body main .articles div:nth-child(2n+1) {
+  flex-direction: row-reverse;
+}
+body main .articles .articleTitle {
+  font-weight: normal;
+  margin: 15vh 0 10vh;
+  text-align: center;
+  font-size: 1.5em;
+}
+body main .articles .firstArticle, body main .articles .fourthArticle, body main .articles .thirdArticle, body main .articles .secondArticle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+body main .articles .firstArticle .image1, body main .articles .fourthArticle .image1, body main .articles .fourthArticle .image4, body main .articles .thirdArticle .image1, body main .articles .thirdArticle .image3, body main .articles .secondArticle .image1, body main .articles .secondArticle .image2 {
+  position: relative;
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.4);
+  flex: 1 1 auto;
+}
+body main .articles .firstArticle .image1 img, body main .articles .fourthArticle .image1 img, body main .articles .fourthArticle .image4 img, body main .articles .thirdArticle .image1 img, body main .articles .thirdArticle .image3 img, body main .articles .secondArticle .image1 img, body main .articles .secondArticle .image2 img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: -1;
+}
+body main .articles .firstArticle .image1 .firstDate, body main .articles .fourthArticle .image1 .firstDate, body main .articles .fourthArticle .image4 .firstDate, body main .articles .fourthArticle .image4 .fourthDate, body main .articles .thirdArticle .image1 .firstDate, body main .articles .thirdArticle .image3 .firstDate, body main .articles .thirdArticle .image3 .thirdDate, body main .articles .secondArticle .image1 .firstDate, body main .articles .secondArticle .image2 .firstDate, body main .articles .secondArticle .image2 .secondDate {
+  position: absolute;
+  color: #fff;
+  top: 90%;
+}
+body main .articles .firstArticle .image1 .firstArticleButton, body main .articles .fourthArticle .image1 .firstArticleButton, body main .articles .fourthArticle .image4 .firstArticleButton, body main .articles .fourthArticle .image4 .fourthArticleButton, body main .articles .thirdArticle .image1 .firstArticleButton, body main .articles .thirdArticle .image3 .firstArticleButton, body main .articles .thirdArticle .image3 .thirdArticleButton, body main .articles .secondArticle .image1 .firstArticleButton, body main .articles .secondArticle .image2 .firstArticleButton, body main .articles .secondArticle .image2 .secondArticleButton {
+  position: absolute;
+  top: 10%;
+  right: 3%;
+  display: block;
+  font-family: "Open Sans";
+  height: 30px;
+  width: 60px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: solid 2px #fff;
+}
+body main .articles .firstArticle .image1 .firstArticleButton::after, body main .articles .fourthArticle .image1 .firstArticleButton::after, body main .articles .fourthArticle .image4 .firstArticleButton::after, body main .articles .fourthArticle .image4 .fourthArticleButton::after, body main .articles .thirdArticle .image1 .firstArticleButton::after, body main .articles .thirdArticle .image3 .firstArticleButton::after, body main .articles .thirdArticle .image3 .thirdArticleButton::after, body main .articles .secondArticle .image1 .firstArticleButton::after, body main .articles .secondArticle .image2 .firstArticleButton::after, body main .articles .secondArticle .image2 .secondArticleButton::after {
+  content: " ♥";
+}
+body main .articles .firstArticle p, body main .articles .fourthArticle p, body main .articles .thirdArticle p, body main .articles .secondArticle p {
+  margin: 0 2vw;
+  text-align: center;
+  max-width: 30vw;
+  min-width: 10vw;
+}
+body main .subscribe {
+  padding: 0 4vw;
+}
+body main .subscribe .subscribeWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  height: 20vh;
+  background-color: #fff;
+  font-size: 1.5em;
+}
+body main .subscribe .subscribeWrapper form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+body main .subscribe .subscribeWrapper form span {
+  min-width: 320px;
+}
+body main .subscribe .subscribeWrapper form input {
+  background-color: #E8E8E8;
+  border: 1px solid black;
+  font-family: "Open Sans";
+  font-size: 0.6em;
+  padding-left: 15px;
+  height: 50px;
+  width: 70%;
+}
+body main .subscribe .subscribeWrapper form .subscribeButton {
+  font-family: "Open Sans";
+  height: 54px;
+  width: 90px;
+  background-color: #343638;
+  color: white;
+  border: none;
+}
+body main .lastSection {
+  display: flex;
+  justify-content: space-between;
+  padding: 8% 4vw;
+  background-color: white;
+}
+body main .lastSection .blackWhite {
+  flex: 0.9;
+  margin-right: 2vw;
+}
+body main .lastSection .blackWhite p {
+  color: #A4A4A4;
+}
+body main .lastSection .latTweet {
+  flex: 0.9;
+  margin-right: 2vw;
+}
+body main .lastSection .latTweet p {
+  color: #A4A4A4;
+}
+body main .lastSection .latTweet .tweetTime {
+  color: #F0F0F0;
+}
+body main .lastSection .contact {
+  flex: 0.9;
+  margin-right: 10vw;
+}
+body main .lastSection .contact p {
+  color: #A4A4A4;
+}
+body main .lastSection .newsletter {
+  flex: 1.2;
+}
+body main .lastSection .newsletter p {
+  color: #A4A4A4;
+}
+body main .lastSection .newsletter .getAnotherEmail {
+  display: flex;
+}
+body main .lastSection .newsletter .getAnotherEmail input {
+  background-color: #E8E8E8;
+  border: 1px solid black;
+  font-family: "Open Sans";
+  height: 30px;
+  width: 70%;
+}
+body main .lastSection .newsletter .subscribeButton2 {
+  font-family: "Open Sans";
+  height: 34px;
+  background-color: #343638;
+  color: white;
+  border: none;
+}
+body footer {
+  padding: 0 4vw;
+  background-color: white;
+}
+body footer .footerWrapper {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid #E8E8E8;
+}
+body footer .footerWrapper p {
+  color: #A4A4A4;
+}
+body footer .footerWrapper .navigation2 ul li {
+  display: inline;
+  padding: 0 1vw;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,119 @@
+<form [formGroup]="courseForm" class="new-courses-form">
+  <div class="new-courses-form_input-wrapper">
+    <div class="new-courses-form_input-header">
+      <label>Title:</label>
+      <span>*required</span>
+    </div>
+    <input placeholder="Some title..." formControlName="title">
+
+    <div *ngIf="courseForm.get('title')?.invalid && courseForm.get('title')?.touched">
+      <span *ngIf="courseForm.get('title')?.hasError('required')"
+            class="error-span">
+        Cannot be empty</span>
+
+      <span *ngIf="courseForm.get('title')?.hasError('maxlength')"
+            class="error-span">
+        Maximum length is  {{courseForm.get('title')?.errors?.maxlength.requiredLength}}</span>
+    </div>
+
+  </div>
+
+  <div class="new-courses-form_input-wrapper">
+    <div class="new-courses-form_input-header">
+      <label>Description:</label>
+      <span>*required</span>
+    </div>
+    <textarea placeholder="Description..." formControlName="description"></textarea>
+
+    <div *ngIf="courseForm.get('description')?.invalid && courseForm.get('description')?.touched">
+      <span *ngIf="courseForm.get('description')?.hasError('required')"
+            class="error-span">
+        Cannot be empty</span>
+
+      <span *ngIf="courseForm.get('description')?.hasError('maxlength')"
+            class="error-span">
+        Maximum length is  {{courseForm.get('description')?.errors?.maxlength.requiredLength}}</span>
+    </div>
+  </div>
+
+  <div class="new-courses-form_input-wrapper input-wrapper_duration">
+    <div class="new-courses-form_input-header">
+      <label>Duration:</label>
+      <span>*required</span>
+    </div>
+    <input placeholder="0" formControlName="duration">
+
+    <div *ngIf="isDurationRangeTouched">
+      <span *ngIf="courseForm.get('duration')?.hasError('required')"
+            class="error-span">
+        Cannot be empty.</span>
+
+      <span *ngIf="courseForm.get('duration')?.hasError('range')"
+            class="error-span">
+        Duration out of range from {{ courseForm.get('duration')?.errors?.min }}
+        to {{ courseForm.get('duration')?.errors?.max }}
+      </span>
+    </div>
+  </div>
+
+  <div class="new-courses-form_input-wrapper input-wrapper_date">
+    <div class="new-courses-form_input-header">
+      <label>Date:</label>
+      <span>*required</span>
+    </div>
+    <input placeholder="02/31/20" formControlName="date">
+
+    <div *ngIf="courseForm.get('date')?.invalid && courseForm.get('date')?.touched">
+      <span *ngIf="courseForm.get('date')?.hasError('required')"
+            class="error-span">
+        Cannot be empty</span>
+
+      <span *ngIf="courseForm.get('date')?.hasError('date')"
+            class="error-span">
+        Date format should be MM/DD/YY </span>
+    </div>
+  </div>
+
+  <div class="new-courses-form_input-wrapper">
+    <div class="new-courses-form_input-header">
+      <label>Authors:</label>
+      <span>*required</span>
+    </div>
+    <select formControlName="authors">
+      <option value="author1">Author 1</option>
+      <option value="author2">Author 2</option>
+    </select>
+
+    <div *ngIf="courseForm.get('authors')?.invalid && courseForm.get('authors')?.touched">
+      <span *ngIf="courseForm.get('authors')?.hasError('required')"
+            class="error-span">
+        Cannot be empty</span>
+
+    </div>
+  </div>
+
+  <div class="new-courses-form_button-wrapper">
+    <button type="button" class="btn btn-secondary button-wrapper_cancel-button"
+            (click)="onCancel()"
+    >Cancel</button>
+
+    <button type="submit" class="btn button-wrapper_save-button btn-dark"
+            *ngIf="!isEdit"
+            (click)="onAdd()"
+            [disabled]="courseForm.invalid"
+    >Save
+    </button>
+
+    <button type="submit" class="btn button-wrapper_save-button btn-dark"
+            *ngIf="isEdit"
+            (click)="onEdit()"
+            [disabled]="courseForm.invalid"
+    >Edit
+    </button>
+  </div>
+
+</form>
+
+<ng-container *ngIf="loading$ | async">
+  <app-loader></app-loader>
+</ng-container>

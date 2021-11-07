@@ -1,0 +1,158 @@
+.tm-content-box.flex-2-col {
+	display: flex;
+	align-items: center;
+}
+
+.tm-section-title.tm-section-title-box.tm-box-bg-title:hover {
+	color: white;
+	font-weight: bold;
+	background-color: #88CDF7;
+}
+
+p::first-letter {
+	color: lightskyblue; 
+  	font-size: 30px;
+}
+
+.tm-main-nav, 
+.tm-content-box,
+.blocks {
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.tm-banner {
+	padding: 0;
+	border: 30px solid #F5F5F5;
+}
+
+section::before {
+   content: "";
+   width: 0;
+   height: 0;
+   border-style: solid;
+   border-width: 2em 20em 0 0;
+   border-color: lightskyblue transparent transparent lightskyblue;
+}
+
+#tmCarousel h2.tm-section-title {
+	color: gainsboro;
+	letter-spacing: 5px;
+}
+
+h2.tm-section-title + p {
+	font-style: italic;
+}
+
+div.tm-content-box.flex-2-col > div.padding-medium.flex-item.tm-team-description-container.flex-item > p.tm-section-description {
+	text-indent: 20px;
+	line-height: 1.6;
+}
+
+section.heading.tm-content-box > div.padding-medium > ol > li > a.text:after {
+	content: "New";
+  	color: red;
+  	font-size: 12px;
+  	vertical-align: super;
+  	position: absolute;
+}
+
+section.heading.tm-content-box > div.padding-medium > ol > li > a {
+  	color: black;
+  	text-decoration: none;
+  	border-bottom: 1px solid;
+ 	border-bottom-color: white;
+  }
+
+section.heading.tm-content-box > div.padding-medium > ol > li > a:visited {
+  	border-bottom-color: black;
+  }
+
+section.heading.tm-content-box > div.padding-medium > ol > li > a:hover {
+  	color: lightskyblue;
+	text-decoration-line: underline;
+	text-decoration-style: double;
+	border-bottom-color: white;
+}
+
+section.blocks > div.tm-content-box {
+	box-shadow: none;
+}
+
+section.blocks > div.tm-content-box > ul.boxes.gallery-container > li{
+	padding: 10px;
+}
+
+section.blocks > div.tm-content-box > ul.boxes.gallery-container > li:nth-child(2) {
+	background-color: #F5F5F5;
+}
+
+ul.boxes.gallery-container > li.box.box-work > div > p::first-letter {
+	color: black; 
+}
+
+ul.boxes.gallery-container > li.box.box-work > div > p {
+	font-style: italic;
+}
+
+.mandatory-field:after  {
+	content:"*";
+	color: red;
+}
+
+.btn.btn-primary.submit-btn {
+	float: right;
+	border: none;
+}
+
+.btn.btn-primary.submit-btn:hover {
+	background-color: lightskyblue;
+	border-radius: 0;
+}
+
+a.tm-nav-item-link:hover {
+	background-color: grey;
+}
+
+@media print {
+
+	.tm-sidebar,
+	.gallery-container,
+	.heading,
+	.blocks,
+	.carousel,
+	.img-contact-us,
+	#contact {
+		display: none;
+	}
+
+	.tm-main-content {
+		width: 75%;
+		margin: 0 auto;
+	}
+
+	.padding-medium.flex-item.tm-team-description-container.flex-item > h2 {
+		color: blue;
+	}
+
+	.tm-content-box.flex-2-col {
+		display: flex;
+		align-items: center;
+	}
+
+	.flex-item img {
+		width: 250px;
+	}
+
+	section::before {
+   		border: none;
+   	}
+
+   	.tm-banner {
+		padding: 30px;
+		border: none;
+	}
+
+	 .tm-content-box {
+    	margin-bottom: 0;
+  	}
+}

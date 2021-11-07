@@ -1,0 +1,16 @@
+<div [appHighlightNewCourse]="item" class="courses-section_course">
+  <div class="course_course-header">
+    <h2 class="course-title">{{ item.title }}</h2>
+    <div class="course-title_time-wrapper">
+      <span class="time-wrapper_time">{{ item.duration | minsToHoursConverter }}</span>
+      <span class="time-wrapper_date">{{ item.date | date }}</span>
+    </div>
+  </div>
+  <div class="course_course-main-info">
+    <p>{{ item.description }}</p>
+    <div class="course-main-info_button-wrapper">
+      <button (click)="onEdit()" class="btn btn-primary course-main-info_edit-button">Edit</button>
+      <button  (click)="handleDelete()" class="btn btn-primary course-main-info_delete-button">Delete</button>
+    </div>
+  </div>
+</div>

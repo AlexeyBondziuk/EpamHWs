@@ -1,0 +1,59 @@
+.new-courses-form_input-wrapper {
+  margin-bottom: 10px;
+}
+.new-courses-form_input-header {
+  display: flex;
+  justify-content: space-between;
+  color: grey;
+}
+.new-courses-form input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.new-courses-form textarea {
+  width: 100%;
+  height: 60px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.input-wrapper_duration {
+  @extend .new-courses-form_input-wrapper;
+  width: 20%;
+}
+.input-wrapper_date {
+  @extend .input-wrapper_duration
+}
+.new-courses-form_input-wrapper {
+  margin-bottom: .5rem;
+}
+.new-courses-form_input-wrapper select {
+  width: 100%;
+  height: 40px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.new-courses-form_button-wrapper {
+  text-align: right;
+}
+.new-courses-form_button-wrapper button {
+  margin-left: 10px;
+}
+//.button-wrapper_save-button:disabled {
+//  cursor: not-allowed;
+//}
+.error-span {
+  color: crimson;
+}
+input, textarea, select {
+  &.ng-invalid.ng-touched {
+    border: 1px solid crimson;
+  }
+  &.ng-valid.ng-touched {
+    border: 1px solid green;
+  }
+}

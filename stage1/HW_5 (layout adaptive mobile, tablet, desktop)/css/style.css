@@ -1,0 +1,419 @@
+@charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+}
+html body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+html body header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10vw;
+  position: fixed;
+  width: 80%;
+  background: #fff;
+  height: 7vh;
+}
+html body header a img {
+  height: 32px;
+  display: block;
+}
+html body header nav ul li {
+  display: inline;
+  font-weight: bold;
+  padding: 0 1vw;
+}
+html body header nav ul li a {
+  text-decoration: none;
+}
+html body header nav ul li a:hover {
+  color: #0078aa;
+}
+html body main {
+  padding-top: 7vh;
+}
+html body main .topSection {
+  background: url("../img/lady.jpg") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  height: 80vh;
+  padding: 0 10vw;
+}
+html body main .topSection .topSectionWrapper {
+  width: 40vw;
+}
+html body main .topSection .topSectionWrapper h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+html body main .topSection .topSectionWrapper p {
+  color: #363636;
+  width: 30vw;
+}
+html body main .topSection .topSectionWrapper .icons {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+html body main .topSection .topSectionWrapper .icons .iconOfHeart, html body main .topSection .topSectionWrapper .icons .iconStethoscope, html body main .topSection .topSectionWrapper .icons .iconOfKit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0078aa;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px solid #0078aa;
+}
+html body main .topSection .topSectionWrapper .icons .iconOfHeart .svgHeartbeat, html body main .topSection .topSectionWrapper .icons .iconStethoscope .svgHeartbeat, html body main .topSection .topSectionWrapper .icons .iconStethoscope .svgStethoscope, html body main .topSection .topSectionWrapper .icons .iconOfKit .svgHeartbeat, html body main .topSection .topSectionWrapper .icons .iconOfKit .svgFirstAidKid {
+  width: 30px;
+  color: white;
+}
+html body main .topSection .topSectionWrapper .icons .iconOfHeart:hover, html body main .topSection .topSectionWrapper .icons .iconStethoscope:hover, html body main .topSection .topSectionWrapper .icons .iconOfKit:hover {
+  background-color: #fff;
+}
+html body main .topSection .topSectionWrapper .icons .iconOfHeart:hover .svgHeartbeat, html body main .topSection .topSectionWrapper .icons .iconOfHeart:hover .iconStethoscope .svgStethoscope, html body main .topSection .topSectionWrapper .icons .iconStethoscope .iconOfHeart:hover .svgStethoscope, html body main .topSection .topSectionWrapper .icons .iconStethoscope:hover .svgHeartbeat, html body main .topSection .topSectionWrapper .icons .iconStethoscope:hover .svgStethoscope, html body main .topSection .topSectionWrapper .icons .iconOfHeart:hover .iconOfKit .svgFirstAidKid, html body main .topSection .topSectionWrapper .icons .iconStethoscope:hover .iconOfKit .svgFirstAidKid, html body main .topSection .topSectionWrapper .icons .iconOfKit .iconOfHeart:hover .svgFirstAidKid, html body main .topSection .topSectionWrapper .icons .iconOfKit .iconStethoscope:hover .svgFirstAidKid, html body main .topSection .topSectionWrapper .icons .iconOfKit:hover .svgHeartbeat, html body main .topSection .topSectionWrapper .icons .iconOfKit:hover .iconStethoscope .svgStethoscope, html body main .topSection .topSectionWrapper .icons .iconStethoscope .iconOfKit:hover .svgStethoscope, html body main .topSection .topSectionWrapper .icons .iconOfKit:hover .svgFirstAidKid {
+  color: #0078aa;
+}
+html body main .topSection .scrollUp {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0078aa;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px solid #0078aa;
+  height: 30px;
+}
+html body main .topSection .scrollUp .svgArrow {
+  width: 30px;
+  color: white;
+}
+html body main .topSection .scrollUp:hover {
+  background-color: #fff;
+}
+html body main .topSection .scrollUp:hover .svgArrow {
+  color: #0078aa;
+}
+html body main .aboutClinicSection {
+  display: flex;
+  align-items: center;
+  padding: 0 8vw 0 0;
+}
+html body main .aboutClinicSection img {
+  display: block;
+  width: 50%;
+}
+html body main .aboutClinicSection .textAboutClinic {
+  width: 35vw;
+  padding-left: 5em;
+}
+html body main .aboutClinicSection .textAboutClinic h2 {
+  margin: 0;
+  font-size: 2em;
+}
+html body main .aboutClinicSection .textAboutClinic h2 + p {
+  margin-top: 5px;
+  color: #0078aa;
+  text-transform: uppercase;
+}
+html body main .aboutClinicSection .textAboutClinic h3 {
+  margin-bottom: 5px;
+}
+html body main .aboutClinicSection .textAboutClinic h3:before {
+  content: "⇨ ";
+  color: #0078aa;
+}
+html body main .aboutClinicSection .textAboutClinic p {
+  margin-top: 0;
+}
+html body main .services {
+  padding: 4em 10vw;
+  background: url("../img/services_bg.jpg") no-repeat top center;
+  background-size: cover;
+}
+html body main .services h2 {
+  margin: 0;
+  font-size: 2em;
+  text-align: center;
+}
+html body main .services h2 + p {
+  margin-top: 5px;
+  text-transform: uppercase;
+  text-align: center;
+}
+html body main .services h3 {
+  margin: 0.1em 0;
+}
+html body main .services .listOfServices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+html body main .services .listOfServices .service {
+  width: 28%;
+  padding: 0 1vw;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+html body main .pricing {
+  padding: 4em 10vw;
+  background: url("../img/pricing_bg.jpg") no-repeat top center;
+  background-size: cover;
+}
+html body main .pricing h2 {
+  margin: 0;
+  font-size: 2em;
+  text-align: center;
+}
+html body main .pricing h2 + p {
+  margin-top: 5px;
+  text-transform: uppercase;
+  text-align: center;
+}
+html body main .pricing .listOfPrices {
+  display: flex;
+  justify-content: center;
+  margin: 3em 0;
+}
+html body main .pricing .listOfPrices .price {
+  font-size: 3em;
+  font-weight: bold;
+}
+html body main .pricing .listOfPrices .getNow {
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
+  color: #0078aa;
+  font-weight: bold;
+  font-size: 1.1em;
+  border: 2px solid #0078aa;
+  background-color: #fff;
+  border-radius: 10px;
+}
+html body main .pricing .listOfPrices .getNow:hover {
+  background-color: #0078aa;
+  color: #fff;
+}
+html body main .pricing .listOfPrices .allergyTest, html body main .pricing .listOfPrices .dentalCare {
+  padding: 2em 0;
+  margin: 2em 0;
+  text-align: center;
+  width: 33%;
+  background-color: #47C9E5;
+  color: #fff;
+}
+html body main .pricing .listOfPrices .allergyTest h3, html body main .pricing .listOfPrices .dentalCare h3 {
+  font-size: 1.5em;
+}
+html body main .pricing .listOfPrices .allergyTest .price, html body main .pricing .listOfPrices .dentalCare .price {
+  font-size: 3.5em;
+  margin: 0.2em 0;
+}
+html body main .pricing .listOfPrices .allergyTest .italic, html body main .pricing .listOfPrices .dentalCare .italic {
+  font-style: italic;
+}
+html body main .pricing .listOfPrices .allergyTest p, html body main .pricing .listOfPrices .dentalCare p {
+  margin-bottom: 2em;
+}
+html body main .pricing .listOfPrices .eyeCheckup {
+  text-align: center;
+  padding: 4em 0;
+  width: 33%;
+  border: 1px solid #0078aa;
+  background-color: #fff;
+  color: #0078aa;
+}
+html body main .pricing .listOfPrices .eyeCheckup h3 {
+  font-size: 1.5em;
+}
+html body main .pricing .listOfPrices .eyeCheckup .price {
+  font-size: 3.5em;
+  margin: 0.2em 0;
+}
+html body main .pricing .listOfPrices .eyeCheckup .italic {
+  font-style: italic;
+}
+html body main .pricing .listOfPrices .eyeCheckup p {
+  margin-bottom: 2em;
+}
+html body main .contact {
+  display: flex;
+}
+html body main .contact .imgContact {
+  width: 50%;
+}
+html body main .contact .contactForm {
+  width: 50%;
+  padding-left: 5em;
+}
+html body main .contact .contactForm h2 {
+  margin: 0;
+  font-size: 2em;
+}
+html body main .contact .contactForm h2 + p {
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+html body main .contact .contactForm form {
+  margin-top: 2em;
+}
+html body main .contact .contactForm form input {
+  padding-left: 0.5em;
+  margin-bottom: 2em;
+  border: none;
+  border-bottom: 1px solid darkgrey;
+  outline: 0;
+  width: 90%;
+  font-style: italic;
+}
+html body main .contact .contactForm form button {
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1em;
+  border: 2px solid #0078aa;
+  background-color: #0078aa;
+  border-radius: 10px;
+}
+html body main .contact .contactForm form button:hover {
+  background-color: #fff;
+  color: #0078aa;
+}
+html body footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  color: #fff;
+  background-color: #363636;
+}
+
+@media screen and (min-width: 1280px) {
+  html body main .aboutClinicSection {
+    padding: 5% 0;
+  }
+  html body main .contact .imgContact {
+    max-width: 50%;
+  }
+  html body main .contact .imgContact img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  html body main .contact .contactForm {
+    background-color: #fff;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  html body main .topSection .topSectionWrapper .icons .iconOfKit {
+    margin: 0 5px;
+  }
+  html body main .aboutClinicSection {
+    padding: 5% 0;
+  }
+  html body main .contact .imgContact {
+    overflow-x: hidden;
+  }
+  html body main .contact .imgContact img {
+    display: block;
+  }
+  html body main .contact .contactForm {
+    background-color: #fff;
+  }
+}
+@media screen and (max-width: 767px) {
+  html body header {
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    padding: 0;
+  }
+  html body header ul {
+    padding: 0;
+  }
+  html body main .topSection {
+    padding: 0;
+    height: 600px;
+    background: url("../img/lady.jpg") no-repeat center center;
+    background-position-x: 35%;
+  }
+  html body main .topSection .topSectionWrapper {
+    width: 100%;
+  }
+  html body main .topSection .topSectionWrapper h1 {
+    text-align: center;
+  }
+  html body main .topSection .topSectionWrapper p {
+    text-align: center;
+    width: 100%;
+  }
+  html body main .topSection .topSectionWrapper .icons {
+    width: 100%;
+    justify-content: space-around;
+  }
+  html body main .topSection .topSectionWrapper .icons .iconOfKit {
+    margin: 0 5px;
+  }
+  html body main .aboutClinicSection {
+    flex-direction: column;
+    padding: 0;
+  }
+  html body main .aboutClinicSection img {
+    width: 100%;
+  }
+  html body main .aboutClinicSection .textAboutClinic {
+    width: 100%;
+    text-align: center;
+    padding: 10px 5px;
+  }
+  html body main .services {
+    padding: 5px;
+  }
+  html body main .services .listOfServices {
+    flex-direction: column;
+    align-items: center;
+  }
+  html body main .services .listOfServices .service {
+    padding: 5%;
+    width: 90%;
+  }
+  html body main .pricing {
+    padding: 4em 5px;
+  }
+  html body main .pricing .listOfPrices {
+    flex-direction: column;
+  }
+  html body main .pricing .listOfPrices .allergyTest, html body main .pricing .listOfPrices .dentalCare {
+    width: 100%;
+  }
+  html body main .pricing .listOfPrices .eyeCheckup {
+    width: 100%;
+  }
+  html body main .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  html body main .contact .imgContact {
+    width: 100%;
+  }
+  html body main .contact .imgContact img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  html body main .contact .contactForm {
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,32 @@
+header {
+  position: absolute;
+  height: 70px;
+  background-color: #414452;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.header_logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+.logo-wrapper_logo-image {
+  display: block;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+.logo-wrapper_logo-name {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.nav-wrapper_link {
+  color: white;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.active {
+  text-decoration: underline;
+}

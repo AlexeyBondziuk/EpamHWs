@@ -1,0 +1,13 @@
+<section class="new-courses-section">
+  <h3>{{ id ? "Edit" : "New"}} course</h3>
+
+  <app-course-form
+
+    [course] = "course$ | async"
+    (edit)="editHandler($event)"
+    (add)="addHandler($event)"
+    (cancel)="cancelHandler()"
+  >
+  </app-course-form>
+
+</section>

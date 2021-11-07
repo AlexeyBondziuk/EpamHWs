@@ -1,0 +1,76 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "First course",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur doloremque doloribus eos incidunt laboriosam, optio quos repudiandae? Doloribus porro quae vitae? Accusantium aliquid  asperiores dignissimos dolor doloribus iusto, perspiciatis rem.",
+      "duration": "120",
+      "date": "2019-4-20",
+      "authors": "author2"
+    },
+    {
+      "id": 2,
+      "title": "Second course",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur doloremque doloribus eos incidunt laboriosam, optio quos repudiandae? Doloribus porro quae vitae? Accusantium aliquid  asperiores dignissimos dolor doloribus iusto, perspiciatis rem.",
+      "duration": "124",
+      "date": "2021-7-22",
+      "authors": "author1"
+    },
+    {
+      "id": 3,
+      "title": "Third course",
+      "description": "Consequatur doloremque doloribus eos incidunt laboriosam, optio quos repudiandae? Doloribus porro quae vitae? Accusantium aliquid  asperiores dignissimos dolor doloribus iusto, perspiciatis rem.",
+      "duration": "95",
+      "date": "2021-8-16",
+      "authors": "author1"
+    },
+    {
+      "id": 4,
+      "title": "4th course",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur doloremque doloribus eos incidunt laboriosam, optio quos repudiandae? Doloribus porro quae vitae? Accusantium aliquid  asperiores dignissimos dolor doloribus iusto, perspiciatis rem.",
+      "duration": "124",
+      "date": "2021-7-22",
+      "authors": "author1"
+    },
+    {
+      "title": "5th course",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur doloremque doloribus eos incidunt laboriosam, optio quos repudiandae? Doloribus porro quae vitae? Accusantium aliquid  asperiores dignissimos dolor doloribus iusto, perspiciatis rem.",
+      "duration": "95",
+      "date": "2021-8-16",
+      "authors": "author1",
+      "id": 5
+    },
+    {
+      "id": 6,
+      "title": "6th course",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur doloremque doloribus eos incidunt laboriosam, optio quos repudiandae? Doloribus porro quae vitae? Accusantium aliquid  asperiores dignissimos dolor doloribus iusto, perspiciatis rem.",
+      "duration": "124",
+      "date": "2021-7-22",
+      "authors": "author1"
+    },
+    {
+      "id": 7,
+      "title": "7th course",
+      "description": "Consequatur doloremque doloribus eos incidunt laboriosam, optio quos repudiandae? Doloribus porro quae vitae? Accusantium aliquid  asperiores dignissimos dolor doloribus iusto, perspiciatis rem.",
+      "duration": "95",
+      "date": "2021-8-16",
+      "authors": "author1"
+    },
+    {
+      "id": 8,
+      "title": "8th course",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur doloremque doloribus eos incidunt laboriosam, optio quos repudiandae? Doloribus porro quae vitae? Accusantium aliquid  asperiores dignissimos dolor doloribus iusto, perspiciatis rem.",
+      "duration": "124",
+      "date": "2021-7-22",
+      "authors": "author1"
+    },
+    {
+      "id": 9,
+      "title": "9th course",
+      "description": "Consequatur doloremque doloribus eos incidunt laboriosam, optio quos repudiandae? Doloribus porro quae vitae? Accusantium aliquid  asperiores dignissimos dolor doloribus iusto, perspiciatis rem.",
+      "duration": "95",
+      "date": "2021-8-16",
+      "authors": "author1"
+    }
+  ]
+}

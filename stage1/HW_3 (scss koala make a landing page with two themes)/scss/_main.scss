@@ -1,0 +1,289 @@
+// Write your styles here
+
+$mapFonts: (
+  font-stack: $font-stack,
+  font-stack2: $font-stack2
+);
+
+%marker {
+  content: "";
+  background-color: $markerColor;
+  position: absolute;
+  z-index: -1;
+}
+
+@mixin fontStyle($color, $fontSize) {
+  color: $color;
+  font-size: $fontSize;
+}
+
+@mixin styleButton ($width: 100px, $height: 35px, $border: none, $border-radius: 2px, $border-color: $buttonColor){
+
+  min-width: $width;
+  min-height: $height;
+  border: $border;
+  border-radius: $border-radius;
+  background-color: $border-color;
+}
+
+body {
+  background-color: $backgroundColor;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  header {
+    background-size: cover;
+    background: $backgroundImage;
+    border-bottom-right-radius: 30vh;
+    height: 60vh;
+    z-index: 1;
+  }
+    .header-wrap {
+      padding-left: 10vw;
+
+      .landing-logo {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        font-family: map-get($mapFonts, font-stack2);
+        color: $headerTextColor;
+        width: 140px;
+
+        img {
+          margin-block-start: 1.6em;
+          max-height: 5vh;
+        }
+
+        p {
+          padding: 10px;
+          text-align: center;
+          font-size: 1.5em;
+          font-weight: bold;
+          line-height: 0.8em;
+
+          span {
+            display: block;
+            font-size: 0.5em;
+          }
+        }
+      }
+
+      .header_heading {
+        max-width: 30vw;
+        min-width: 6em;
+        margin-block: 0.2em;
+        font-family: map-get($mapFonts, font-stack);
+        font-size: 3.2em;
+        font-weight: bold;
+        color: $headerTextColor;
+        margin-right: 60vw;
+
+          &::after {
+            @extend %marker;
+            width: 220px;
+            height: 45px;
+            top: 25vh;
+            left: 10vw;
+          }
+        }
+
+      .header_text {
+        max-width: 40vw;
+        min-width: 25em;
+        color: $headerTextColor;
+        margin-block: 0.5em;
+        margin-right: 45vw;
+        font-family: map-get($mapFonts, font-stack2);
+        white-space: pre-line;
+        font-size: $mainTextSize;
+      }
+
+      .header_text ~ div {
+        font-family: map-get($mapFonts, font-stack);
+        margin: 5vh 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 25vw;
+        min-width: 6em;
+      }
+
+      .header_text ~ div > * {
+        display: block;
+        color: white;
+        font-size: 0.9em;
+      }
+
+      .header_button {
+        @include styleButton();
+      }
+    }
+}
+
+main {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+    .section_text {
+      font-family: map-get($mapFonts, font-stack);
+      color: $SectionCardHeadingColor;
+      font-size: 1.7em;
+      font-weight: bold;
+      z-index: 1;
+
+      &::after {
+        @extend %marker;
+        width: 130px;
+        height: 35px;
+        top: 4vh;
+        left: 42vw;
+      }
+    }
+
+    .section_card_wrap {
+      width: 70%;
+
+      .section_card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+        background-color: $backgroundSectionCardColor;
+        color: white;
+        font-family: map-get($mapFonts, font-stack);
+        padding: 10px;
+        border-radius: 3px;
+        max-width: 80vw;
+        min-height: 20vh;
+
+        .section_card_img {
+          border-radius: 3px;
+        }
+
+        .section_card_right_container {
+          .section_card_heading,
+          .section_link {
+            text-align: center;
+          }
+
+          .section_card_heading {
+            font-weight: bold;
+          }
+
+          .section_card_text {
+            padding: 0 5vw;
+            text-align: justify;
+            font-size: $mainTextSize;
+            color: $textSectionCardColor;
+            font-family: map-get($mapFonts, font-stack2);
+          }
+
+          .section_link {
+            display: block;
+            @include fontStyle($textSectionCardColor, $mainTextSize);
+          }
+        }
+      }
+    }
+
+    .section_banner {
+      background: $backgroundBanner;
+      width: 60vw;
+      height: 15vh;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 5px;
+      font-family: $font-stack;
+      position: relative;
+      top: 7vh;
+      z-index: 1;
+
+      .section_banner_heading {
+        color: $SectionBannerHeadingColor;
+        font-weight: bold;
+        font-size: 1.2em;
+
+        &::after {
+          @extend %marker;
+          width: 40px;
+          height: 25px;
+          top: 4vh;
+          left: 14vw;
+        }
+      }
+
+      .section_banner_text {
+        color: $textSectionCardColor;
+        font-size: $mainTextSize;
+      }
+
+
+      .section_banner_button {
+        @include styleButton();
+        color: white;
+      }
+    }
+}
+
+footer {
+  background-color: $backgroundSectionCardColor;
+  width: 100vw;
+  height: 25vh;
+
+  .footer-wrap {
+    margin-top: 10vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    font-family: map-get($mapFonts, font-stack2);
+    color: $textSectionCardColor;
+
+    .footer_logo.landing-logo {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      min-width: 140px;
+
+      img {
+        margin-block-start: 1.6em;
+        max-height: 5vh;
+      }
+
+      p {
+        padding: 10px;
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: bold;
+        line-height: 0.8em;
+
+        > span {
+          display: block;
+          font-size: 0.5em;
+        }
+      }
+
+    }
+
+    .footer_text {
+      min-width: 20vw;
+      max-width: 30vw;
+      margin: 0 20vw;
+      font-size: $mainTextSize;
+    }
+
+    .footer-cr {
+      display: block;
+      min-width: 200px;
+      font-size: $mainTextSize;
+    }
+  }
+}
